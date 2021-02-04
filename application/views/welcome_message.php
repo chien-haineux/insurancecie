@@ -1,89 +1,26 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<h1>Welcome to InsuranceCie!</h1>
 
-	<style type="text/css">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper mi sit amet orci eleifend mollis. Aenean a consequat elit, sagittis hendrerit velit. In lacinia felis sed erat placerat vulputate. Proin id nisi sollicitudin, vehicula dolor a, tempor dui. Etiam in placerat sapien. Nam quis mauris at ligula ultricies luctus eu ut lorem. In consectetur ante sed neque gravida viverra. In ultrices congue dui gravida feugiat.</p>
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
+			<p>Vestibulum et vehicula eros, ut laoreet diam. Nunc imperdiet porta pulvinar. Fusce sit amet nunc venenatis, maximus massa sed, tempus lorem. Nunc ipsum velit, sodales vel libero sed, condimentum dignissim magna. Suspendisse in mattis velit. Donec vel consequat purus, nec aliquet nisi. Vivamus commodo lacus nec arcu mollis, lacinia dictum metus mattis. Donec lacus lorem, tincidunt sit amet pulvinar vel, faucibus id turpis. Phasellus tempor dictum nibh, at bibendum magna euismod nec. Nunc ultricies est et malesuada finibus.</p>
+		</div>
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+		<div class="col">
+			<h2>Get a quote for your home</h2>
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+			<p>Cras magna ex, dignissim ut pretium vel, aliquam at eros. Integer a nunc justo. Pellentesque turpis tellus, rutrum eu varius nec, lobortis sed orci. Duis vel lorem tristique, fringilla augue eu, consequat augue. </p>
+			<p><a href="<?=site_url('quotes/homeQuote');?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Protect my home</a></p>
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
 
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
+			<h2>Get a quote for your car</h2>
 
-	#body {
-		margin: 0 15px 0 15px;
-	}
+			<p>Etiam ut porta nibh. Nunc ex metus, convallis quis sem nec, convallis blandit orci. Maecenas massa risus, euismod sed malesuada ac, ullamcorper ac ipsum.</p>
 
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
+			<p><a href="<?=site_url('quotes/carQuote');?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Protect my car</a></p>
+		</div>
 
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
-</head>
-<body>
-
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
-
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
-
-</body>
-</html>
