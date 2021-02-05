@@ -22,9 +22,9 @@ class Quotes extends CI_Controller
 		$this->load->view('footer');
 	}
 
+	/** Get customers quotes */
 	public function myquotes()
 	{
-		var_dump(session_id());
 		$carResults = $this->db->get_where('carQuotes', [ 'userSessId' => session_id() ])->result();
 
 		$this->load->view('header');
@@ -63,7 +63,10 @@ class Quotes extends CI_Controller
         {
 			$this->persistHomeQuote($this->input->post());
 
-            $this->load->view('quotes/success');
+			$this->load->view('header');
+			$this->load->view('nav');
+			$this->load->view('quotes/success');
+			$this->load->view('footer');
         }
 	}
 
@@ -119,6 +122,7 @@ class Quotes extends CI_Controller
 
 	public function carQuote()
 	{
+		// Prevent unset var warnings if they are indeed unset
 		$emptyForm = [
 			'firstName' => '',
 			'lastName' => '',
@@ -148,7 +152,10 @@ class Quotes extends CI_Controller
 		{
 			$this->persistCarQuote($this->input->post());
 
+			$this->load->view('header');
+			$this->load->view('nav');
 			$this->load->view('quotes/success');
+			$this->load->view('footer');
 		}
 	}
 

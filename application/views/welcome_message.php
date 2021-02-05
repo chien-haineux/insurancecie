@@ -9,10 +9,13 @@
 		</div>
 
 		<div class="col">
-			<h2>Get a quote for your home</h2>
+			<h2>View my quotes</h2>
 
-			<p>Cras magna ex, dignissim ut pretium vel, aliquam at eros. Integer a nunc justo. Pellentesque turpis tellus, rutrum eu varius nec, lobortis sed orci. Duis vel lorem tristique, fringilla augue eu, consequat augue. </p>
-			<p><a href="<?=site_url('quotes/homeQuote');?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Protect my home</a></p>
+			<p>Etiam ut porta nibh. Nunc ex metus, convallis quis sem nec, convallis blandit orci. Maecenas massa risus, euismod sed malesuada ac, ullamcorper ac ipsum.</p>
+
+			<p><a href="<?=site_url('quotes/myquotes');?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View my quotes</a></p>
+
+			<hr />
 
 			<h2>Get a quote for your car</h2>
 
@@ -21,11 +24,12 @@
 			<p><a href="<?=site_url('quotes/carQuote');?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Protect my car</a></p>
 
 			<hr />
-			<h2>View my quotes</h2>
 
-			<p>Etiam ut porta nibh. Nunc ex metus, convallis quis sem nec, convallis blandit orci. Maecenas massa risus, euismod sed malesuada ac, ullamcorper ac ipsum.</p>
+			<h2>Get a quote for your home</h2>
 
-			<p><a href="<?=site_url('quotes/myquotes');?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View my quotes</a></p>
+			<p>Cras magna ex, dignissim ut pretium vel, aliquam at eros. Integer a nunc justo. Pellentesque turpis tellus, rutrum eu varius nec, lobortis sed orci. Duis vel lorem tristique, fringilla augue eu, consequat augue. </p>
+			<p><a href="<?=site_url('quotes/homeQuote');?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Protect my home</a></p>
+
 		</div>
 
 	</div>
